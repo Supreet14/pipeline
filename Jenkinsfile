@@ -4,7 +4,7 @@ pipeline{
   stages{
     stage('Hello'){
       steps{
-        helloWorld(name:"theju",dayofWeek:"thursday");
+        helloWorld(name:"theju",dayOfWeek:"thursday");
       }
     }
   }
