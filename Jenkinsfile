@@ -23,9 +23,9 @@ pipeline {
             steps{
 
                 echo "terraform action from the parameter is apply"
-                input message : 'Do you want to destroy ?',ok :'yes' 
+                input message : 'Do you want to apply ?',ok :'yes' 
 
-                sh("terraform destroy --auto-approve");
+                sh("terraform apply --auto-approve");
 
             }
 
