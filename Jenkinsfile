@@ -25,7 +25,7 @@
 
                 echo "terraform action from the parameter is apply"
                 input message: 'Do you want to apply ?',ok :'yes'
-                sh(terraform apply --auto-approve");
+                sh("terraform apply --auto-approve");
                    }
                    
 
