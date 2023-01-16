@@ -1,4 +1,5 @@
-pipeline {
+
+              pipeline {
 
     agent any
 
@@ -18,21 +19,38 @@ pipeline {
 
         }
 
-        stage("Terraform Action"){
+        stage("Terraform Apply"){
 
             steps{
 
-                echo "terraform action from the parameter is --> ${action}"
+                echo "terraform action from the parameter is apply"
+                input message: 'Do you want to apply ?',ok :'yes'
+                sh(terraform apply --auto-approve");
+                   }
+                   
 
-                sh("terraform ${action} --auto-approve");
+                   }
 
             }
 
         }
 
-    }
+    
 
-}
+
+
+            
+
+        
+
+    
+
+
+       
+
+       
+
+           
   
 
  
