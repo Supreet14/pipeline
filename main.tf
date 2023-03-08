@@ -1,7 +1,6 @@
 provider "aws" {
-  region = "ap-south-1"
-   access_key="AKIATWFM7UVWOKXFCP4K"
-    secret_key ="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"
+  name ="AWS"
+  region = "ap-northeast-1"
 }
 
 # Creating VPC,name, CIDR and Tags
